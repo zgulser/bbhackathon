@@ -1,17 +1,23 @@
 package com.android.buzzaway.securecards;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.buzzaway.securecards.data.CardClient;
 import com.android.buzzaway.securecards.data.CardModel;
+import com.easyfingerprint.EasyFingerPrint;
 
-import org.honorato.multistatetogglebutton.MultiStateToggleButton;
-import org.honorato.multistatetogglebutton.ToggleButton;
+import org.michaelbel.bottomsheet.BottomSheet;
 
 import java.util.Objects;
 
@@ -21,6 +27,7 @@ public class CardRestrictionActivity extends AppCompatActivity {
     public static final String ARG_LOCATION_LAT = "hack.location.lat";
     public static final String ARG_LOCATION_LNG = "hack.location.lng";
     public static final String ARG_RADIUS = "hack.location.radius";
+    private TextView dateRangeView;
 
     public static void start(@NonNull Context context, @NonNull CardModel cardModel) {
         Bundle args = new Bundle();
@@ -52,17 +59,65 @@ public class CardRestrictionActivity extends AppCompatActivity {
 
         // get locations and radius if present, then send to server when implemented
 
-        final CharSequence[] defaultTimeRanges = new CharSequence[]{"Today", "Tom", "Week", "Month", "More"};
-        MultiStateToggleButton button = this.findViewById(R.id.mstb_multi_id);
-        button.setElements(defaultTimeRanges);
-
-        button.setOnValueChangedListener(new ToggleButton.OnValueChangedListener() {
+        dateRangeView = findViewById(R.id.pickDateRange);
+        dateRangeView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onValueChanged(int position) {
-
+            public void onClick(View v) {
+                dateBottomSheet();
             }
         });
 
+        findViewById(R.id.finish).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fingerprint();
+            }
+        });
+    }
+
+    private void dateBottomSheet() {
+        final CharSequence[] defaultDateRanges = new CharSequence[]{
+                "Today", "Tomorrow", "This week", "This month", "This year", "Custom"};
+        BottomSheet.Builder builder = new BottomSheet.Builder(this);
+        builder.setTitle("How long will the restriction last?");
+        builder.setItems(defaultDateRanges, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (which == defaultDateRanges.length - 1) {
+                    dateRangePicker();
+                } else {
+                    CharSequence range = defaultDateRanges[which];
+                    dateRangeView.setText("Restriction period: " + range);
+                }
+            }
+        });
+        builder.show();
+    }
+
+    private void dateRangePicker() {
+
+    }
+
+    private void fingerprint() {
+        new EasyFingerPrint(this)
+                .setTittle("Verify with your fingerprint")
+                .setSubTittle("foo@example.com")
+                .setDescription("In order to use the Fingerprint sensor we need your authorization first")
+                .setColorPrimary(R.color.colorPrimary)
+                .setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_launcher_round))
+                .setListern(new EasyFingerPrint.ResultFingerPrintListern() {
+                    @Override
+                    public void onError(@NonNull String message, int i) {
+                        Toast.makeText(CardRestrictionActivity.this, message, Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onSucess(FingerprintManagerCompat.CryptoObject cryptoObject) {
+                        Toast.makeText(CardRestrictionActivity.this, "Activated your restriction", Toast.LENGTH_LONG).show();
+                        CardsActivity.start(CardRestrictionActivity.this);
+                    }
+                }).startScan();
+        ;
     }
 
 

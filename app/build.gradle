@@ -28,6 +28,8 @@ dependencies {
     implementation 'com.github.HenriqueMachine:EasyFingerPrint:1.0.1'
     implementation group: 'com.github.dexafree', name: 'materiallist', version: '3.2.1'
     implementation 'org.honorato.multistatetogglebutton:multistatetogglebutton:0.2.2'
+    implementation 'org.michaelbel:bottomsheet:1.2.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.3.11"
     implementation 'com.android.support:support-v4:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

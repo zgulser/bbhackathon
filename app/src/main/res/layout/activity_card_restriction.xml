@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:mstb="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".CardRestrictionActivity">
@@ -29,13 +28,11 @@
         android:checked="true"
         android:text="Require transaction confirmation" />
 
-    <org.honorato.multistatetogglebutton.MultiStateToggleButton
-        android:id="@+id/mstb_multi_id"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/pickDateRange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        mstb:mstbPrimaryColor="@color/colorPrimary"
-        mstb:mstbSecondaryColor="@color/transparent" />
+        android:text="Restriction period: None selected" />
 
     <Button
         android:id="@+id/finish"
