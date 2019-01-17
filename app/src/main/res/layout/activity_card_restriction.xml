@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".CardRestrictionActivity">
@@ -27,6 +28,13 @@
         android:layout_height="wrap_content"
         android:checked="true"
         android:text="Require transaction confirmation" />
+
+    <com.theophrast.ui.widget.SquareImageView
+        android:id="@+id/mapScreenshot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:hwRatio="0.6" />
 
     <TextView
         android:id="@+id/pickDateRange"

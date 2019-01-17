@@ -3,6 +3,8 @@ package com.android.buzzaway.securecards;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,6 +18,7 @@ import android.widget.Toast;
 import com.android.buzzaway.securecards.data.CardClient;
 import com.android.buzzaway.securecards.data.CardModel;
 import com.easyfingerprint.EasyFingerPrint;
+import com.theophrast.ui.widget.SquareImageView;
 
 import org.michaelbel.bottomsheet.BottomSheet;
 
@@ -26,6 +29,7 @@ public class CardRestrictionActivity extends AppCompatActivity {
     public static final String ARG_CARD_ID = "hack.card.id";
     public static final String ARG_LOCATION_LAT = "hack.location.lat";
     public static final String ARG_LOCATION_LNG = "hack.location.lng";
+    public static final String ARG_LOCATION_IMG = "hack.location.img";
     public static final String ARG_RADIUS = "hack.location.radius";
     private TextView dateRangeView;
 
@@ -37,11 +41,14 @@ public class CardRestrictionActivity extends AppCompatActivity {
         context.startActivity(startCardRestriction);
     }
 
-    public static void start(@NonNull Context context, @NonNull Location location, float radius, @NonNull CardModel cardModel) {
+    public static void start(@NonNull Context context, @NonNull Location location, float radius,
+                             @NonNull byte[] map,
+                             @NonNull CardModel cardModel) {
         Bundle args = new Bundle();
         args.putLong(ARG_CARD_ID, cardModel.id);
         args.putDouble(ARG_LOCATION_LAT, location.getLatitude());
         args.putDouble(ARG_LOCATION_LNG, location.getLongitude());
+        args.putByteArray(ARG_LOCATION_IMG, map);
         args.putFloat(ARG_RADIUS, radius);
         Intent startCardRestriction = new Intent(context, CardRestrictionActivity.class);
         startCardRestriction.putExtras(args);
@@ -56,6 +63,15 @@ public class CardRestrictionActivity extends AppCompatActivity {
         long id = getIntent().getLongExtra(ARG_CARD_ID, -1);
         CardModel cardModel = CardClient.instance.findCardById(id);
         Objects.requireNonNull(cardModel);
+
+        SquareImageView mapScreenshot = findViewById(R.id.mapScreenshot);
+        if (getIntent().hasExtra(ARG_LOCATION_IMG)) {
+            byte[] mapBytes = getIntent().getByteArrayExtra(ARG_LOCATION_IMG);
+            Bitmap map = BitmapFactory.decodeByteArray(mapBytes, 0, mapBytes.length);
+            mapScreenshot.setImageBitmap(map);
+        } else {
+            mapScreenshot.setVisibility(View.GONE);
+        }
 
         // get locations and radius if present, then send to server when implemented
 

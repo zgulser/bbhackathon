@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
@@ -30,6 +31,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+import java.io.ByteArrayOutputStream;
 import java.util.Objects;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
@@ -104,11 +106,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
-    private void initSeekbar(){
+    private void initSeekbar() {
         mSeekbar = findViewById(R.id.seekBar);
         mProgress = findViewById(R.id.progress);
         mProgress.setVisibility(View.INVISIBLE);
-        mSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+        mSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress,
@@ -127,7 +129,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     @Override
                     public void onAnimationEnd(Animator animator) {
-                        if (System.currentTimeMillis() - started >= 500L){
+                        if (System.currentTimeMillis() - started >= 500L) {
                             radius = Float.parseFloat(mProgress.getText().toString());
                             drawCircle(radius * 100);
                         }
@@ -146,10 +148,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) { }
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
 
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) { }
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
         });
     }
 
@@ -169,13 +173,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         checkPermission();
     }
 
-    private void checkPermission(){
+    private void checkPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             doCameraStuff();
         } else {
             ActivityCompat.requestPermissions(this,
-                    new String[] {Manifest.permission.ACCESS_FINE_LOCATION},
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
         }
     }
@@ -202,7 +206,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     @SuppressLint("MissingPermission")
-    private void doCameraStuff(){
+    private void doCameraStuff() {
         mMap.setMyLocationEnabled(true);
 
         // get your location
@@ -225,7 +229,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 });
     }
 
-    private void drawCircle(final float radius){
+    private void drawCircle(final float radius) {
         if (myLocation != null) {
             mMap.clear();
             CircleOptions circleOptions = new CircleOptions()
@@ -240,10 +244,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.next) {
-            CardRestrictionActivity.start(this, myLocation, radius, cardModel);
+            mMap.snapshot(new GoogleMap.SnapshotReadyCallback() {
+                @Override
+                public void onSnapshotReady(Bitmap bitmap) {
+                    ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+                    byte[] byteArray = bStream.toByteArray();
+                    CardRestrictionActivity.start(MapsActivity.this, myLocation, radius, byteArray, cardModel);
+                }
+            });
         }
     }
 }
