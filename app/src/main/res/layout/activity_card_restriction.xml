@@ -28,4 +28,20 @@
         android:checked="true"
         android:text="Require transaction confirmation" />
 
+    <TextView
+        android:id="@+id/pickDateRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restriction period: None selected" />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/colorAccent"
+        android:text="Finish"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
 </LinearLayout>

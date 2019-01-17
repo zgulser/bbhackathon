@@ -3,17 +3,22 @@ package com.android.buzzaway.securecards;
 import android.Manifest;
 import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.android.buzzaway.securecards.data.CardClient;
+import com.android.buzzaway.securecards.data.CardModel;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -25,9 +30,13 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 
-import org.w3c.dom.Text;
+import java.util.Objects;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
+
+    public static final String ARG_CARD_ID = "hack.card.id";
+    private float radius;
+    private CardModel cardModel;
 
     private GoogleMap mMap;
     private SeekBar mSeekbar;
@@ -38,12 +47,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private FusedLocationProviderClient mFusedLocationClient;
     private Location myLocation;
 
+    public static void start(@NonNull Context context, @NonNull CardModel cardModel) {
+        Bundle args = new Bundle();
+        args.putLong(ARG_CARD_ID, cardModel.id);
+        Intent startGeofencing = new Intent(context, MapsActivity.class);
+        startGeofencing.putExtras(args);
+        context.startActivity(startGeofencing);
+        ;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-
-        hideSystemUI();
 
         initSeekbar();
 
@@ -53,6 +69,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        populateCardModel();
+
+        findViewById(R.id.next).setOnClickListener(this);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        hideSystemUI();
+    }
+
+    private void populateCardModel() {
+        long id = getIntent().getLongExtra(ARG_CARD_ID, -1);
+        cardModel = CardClient.instance.findCardById(id);
+        Objects.requireNonNull(cardModel);
     }
 
     private void hideSystemUI() {
@@ -96,8 +128,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     @Override
                     public void onAnimationEnd(Animator animator) {
                         if (System.currentTimeMillis() - started >= 500L){
-                            float radius = Float.parseFloat(mProgress.getText().toString());
-                            drawCircle(radius*100);
+                            radius = Float.parseFloat(mProgress.getText().toString());
+                            drawCircle(radius * 100);
                         }
                     }
 
@@ -205,6 +237,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             // Get back the mutable Circle
             mMap.addCircle(circleOptions);
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.next) {
+            CardRestrictionActivity.start(this, myLocation, radius, cardModel);
         }
     }
 }

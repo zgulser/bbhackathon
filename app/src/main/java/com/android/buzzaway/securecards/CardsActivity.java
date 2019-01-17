@@ -5,9 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.android.buzzaway.securecards.data.CardClient;
 import com.android.buzzaway.securecards.data.CardModel;
@@ -43,22 +41,21 @@ public class CardsActivity extends AppCompatActivity {
                 .setDescription(cardModel.description)
                 .setDrawable(cardModel.drawable)
                 .addAction(R.id.left_text_button, new TextViewAction(this)
-                        .setText("VIEW")
+                        .setText("AMOUNT")
                         .setTextResourceColor(R.color.black_button)
                         .setListener(new OnActionClickListener() {
                             @Override
                             public void onActionClicked(View view, Card card) {
-                                Log.d("ADDING", "CARD");
-                                Toast.makeText(getApplicationContext(), "Added new card", Toast.LENGTH_SHORT).show();
+                                CardRestrictionActivity.start(CardsActivity.this, cardModel);
                             }
                         }))
                 .addAction(R.id.right_text_button, new TextViewAction(this)
-                        .setText("RESTRICT")
+                        .setText("AREA")
                         .setTextResourceColor(R.color.accent_material_dark)
                         .setListener(new OnActionClickListener() {
                             @Override
                             public void onActionClicked(View view, Card card) {
-                                CardRestrictionActivity.start(CardsActivity.this, cardModel);
+                                MapsActivity.start(CardsActivity.this, cardModel);
                             }
                         }))
                 .endConfig()
