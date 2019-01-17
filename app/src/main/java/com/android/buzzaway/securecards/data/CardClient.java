@@ -17,8 +17,8 @@ public class CardClient {
     private final List<CardModel> cardModels = new ArrayList<>();
 
     private CardClient() {
-        cardModels.add(new CardModel(1, "Visa", "My super Visa", R.drawable.visa1));
-        cardModels.add(new CardModel(2, "Master", "My super Master", R.drawable.master1));
+        cardModels.add(new CardModel(1, "Visa", "Apply restrictions to my super Visa", R.drawable.visa1));
+        cardModels.add(new CardModel(2, "Master", "Apply restrictions to my super Master", R.drawable.master1));
     }
 
     public List<CardModel> getCards() {
