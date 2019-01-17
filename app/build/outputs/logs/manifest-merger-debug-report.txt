@@ -1,0 +1,286 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4c973d71e40aafbe1cf74f2371efe615/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/6936fe6dc4e2a8acdf34a52612fd8d5b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/b98cfa23c509d0aabf8a0c0b2f06c934/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/537781a6e145296a6ff2d797c9edb2a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f5e9a0cae63970bf97c6f51764072b47/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fcf912a53678fc0954b25d999229cdf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/166fa67d5897a02f5ff6ce111082e79a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d83cba4d00232fad832e4831173c0ad4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/87b4e0d2c5ffeb7c9b21cff2342ffcf6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/394035a67aa597dbbb6c080f06192a14/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a8837b96a5e32037c4ca3f6e1864ab96/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/a7efd8cf79576a78f9ee786f50bef505/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0509df50af0c76ed5d20ac76b1450a13/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d3a0e917ddeac7af432087e168f4d3df/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/162518562a05eaa19fed9b8cdc1e8b99/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0a1d510ad5d62839c4d061236c42bc1a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/4296ee135cb7ab2fa38c87390c322761/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c024203988f63e83ea439e62d1033d9e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/9c3dcbbdd6ed0be10c4bf5bd2835c2f3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/0f85b1b8fff073c379a3f2e94c97a59e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/05a1233ae09627fe4117ebbaf99c87a0/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fa795eccb01fd562baa938224eef83fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/deaffd73048581f114d8540d5fd9b524/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6fa94e1180472376e587c5de7ebc4f67/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/801acfdd612794241357c005ee48ff65/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9f7c69e96ca3a41a16e3d91bf99fdbbe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/46c2659f6baa60bd896f4dd6688cfcc0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4859dfc2953315c030eb752227ff440/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/dc5a5f5861f31c92130c88e72615b626/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/973375a737a82d22131875aa01d58618/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/589d4a99687f027ae44810f5b691d701/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/568196d61199a7ddb4e654e54b232239/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+	package
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:16:5-71
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:16:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:17:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:18:5-72
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:18:22-69
+application
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:20:5-66:19
+MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:22:5-20
+MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:11:5-14:19
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/6936fe6dc4e2a8acdf34a52612fd8d5b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/6936fe6dc4e2a8acdf34a52612fd8d5b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/b98cfa23c509d0aabf8a0c0b2f06c934/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/b98cfa23c509d0aabf8a0c0b2f06c934/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/05a1233ae09627fe4117ebbaf99c87a0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/05a1233ae09627fe4117ebbaf99c87a0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:23:9-41
+	android:roundIcon
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:24:9-54
+	android:icon
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:22:9-43
+	android:allowBackup
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:21:9-35
+	android:theme
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:26:9-40
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:36:9-38:55
+	android:value
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:38:13-52
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:37:13-58
+activity#com.android.buzzaway.securecards.SplashActivity
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:40:9-49:20
+	android:label
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:43:13-58
+	android:configChanges
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:42:13-74
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:41:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:44:13-48:29
+action#android.intent.action.MAIN
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:45:17-69
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:45:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:47:17-77
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:47:27-74
+activity#com.android.buzzaway.securecards.MapsActivity
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:51:9-54:20
+	android:label
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:53:13-56
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:52:13-41
+activity#com.android.buzzaway.securecards.LoginActivity
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:56:9-60:20
+	android:label
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:58:13-57
+	android:theme
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:59:13-51
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:57:13-42
+activity#com.android.buzzaway.securecards.CardsActivity
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:62:9-51
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:62:19-48
+activity#com.android.buzzaway.securecards.CardRestrictionActivity
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:64:9-61
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:64:19-58
+uses-sdk
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:20:5-44
+MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4c973d71e40aafbe1cf74f2371efe615/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4c973d71e40aafbe1cf74f2371efe615/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/6936fe6dc4e2a8acdf34a52612fd8d5b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/6936fe6dc4e2a8acdf34a52612fd8d5b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/b98cfa23c509d0aabf8a0c0b2f06c934/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/b98cfa23c509d0aabf8a0c0b2f06c934/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/537781a6e145296a6ff2d797c9edb2a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/537781a6e145296a6ff2d797c9edb2a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f5e9a0cae63970bf97c6f51764072b47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f5e9a0cae63970bf97c6f51764072b47/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fcf912a53678fc0954b25d999229cdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fcf912a53678fc0954b25d999229cdf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/166fa67d5897a02f5ff6ce111082e79a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/166fa67d5897a02f5ff6ce111082e79a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d83cba4d00232fad832e4831173c0ad4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d83cba4d00232fad832e4831173c0ad4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/87b4e0d2c5ffeb7c9b21cff2342ffcf6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/87b4e0d2c5ffeb7c9b21cff2342ffcf6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/394035a67aa597dbbb6c080f06192a14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/394035a67aa597dbbb6c080f06192a14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a8837b96a5e32037c4ca3f6e1864ab96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a8837b96a5e32037c4ca3f6e1864ab96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/a7efd8cf79576a78f9ee786f50bef505/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/a7efd8cf79576a78f9ee786f50bef505/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0509df50af0c76ed5d20ac76b1450a13/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0509df50af0c76ed5d20ac76b1450a13/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d3a0e917ddeac7af432087e168f4d3df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d3a0e917ddeac7af432087e168f4d3df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/162518562a05eaa19fed9b8cdc1e8b99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/162518562a05eaa19fed9b8cdc1e8b99/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0a1d510ad5d62839c4d061236c42bc1a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/0a1d510ad5d62839c4d061236c42bc1a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/4296ee135cb7ab2fa38c87390c322761/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/4296ee135cb7ab2fa38c87390c322761/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c024203988f63e83ea439e62d1033d9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c024203988f63e83ea439e62d1033d9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/9c3dcbbdd6ed0be10c4bf5bd2835c2f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/9c3dcbbdd6ed0be10c4bf5bd2835c2f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/0f85b1b8fff073c379a3f2e94c97a59e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/0f85b1b8fff073c379a3f2e94c97a59e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/05a1233ae09627fe4117ebbaf99c87a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/05a1233ae09627fe4117ebbaf99c87a0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fa795eccb01fd562baa938224eef83fd/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/fa795eccb01fd562baa938224eef83fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/deaffd73048581f114d8540d5fd9b524/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/deaffd73048581f114d8540d5fd9b524/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6fa94e1180472376e587c5de7ebc4f67/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6fa94e1180472376e587c5de7ebc4f67/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/801acfdd612794241357c005ee48ff65/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/801acfdd612794241357c005ee48ff65/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9f7c69e96ca3a41a16e3d91bf99fdbbe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9f7c69e96ca3a41a16e3d91bf99fdbbe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/46c2659f6baa60bd896f4dd6688cfcc0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/46c2659f6baa60bd896f4dd6688cfcc0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4859dfc2953315c030eb752227ff440/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/c4859dfc2953315c030eb752227ff440/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/dc5a5f5861f31c92130c88e72615b626/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/dc5a5f5861f31c92130c88e72615b626/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/973375a737a82d22131875aa01d58618/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/973375a737a82d22131875aa01d58618/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/589d4a99687f027ae44810f5b691d701/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/589d4a99687f027ae44810f5b691d701/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/568196d61199a7ddb4e654e54b232239/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/568196d61199a7ddb4e654e54b232239/AndroidManifest.xml:20:5-44
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/d4c760a7494fb6724a3b4b0dd74b2ce5/AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b72650025a23ad00a89130be3adb8213/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:24:13-58
