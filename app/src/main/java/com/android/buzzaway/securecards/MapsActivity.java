@@ -243,7 +243,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.next) {
-            CardRestrictionActivity.start(this, cardModel);
+            CardRestrictionActivity.start(this, myLocation, radius, cardModel);
         }
     }
 }
