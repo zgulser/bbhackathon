@@ -1,0 +1,55 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="path"
+                android:pathData="M 12 2 C 8.13 2 5 5.13 5 9 C 5 14.25 12 22 12 22 C 12 22 19 14.25 19 9 C 19 5.13 15.87 2 12 2 Z M 12 11.5 C 10.62 11.5 9.5 10.38 9.5 9 C 9.5 7.62 10.62 6.5 12 6.5 C 13.38 6.5 14.5 7.62 14.5 9 C 14.5 10.38 13.38 11.5 12 11.5 Z"
+                android:fillColor="#000"
+                android:strokeWidth="1"/>
+            <path
+                android:name="path_1"
+                android:pathData="M 20 4 L 4 4 C 2.89 4 2.01 4.89 2.01 6 L 2 18 C 2 19.11 2.89 20 4 20 L 20 20 C 21.11 20 22 19.11 22 18 L 22 6 C 22 4.89 21.11 4 20 4 Z M 20 18 L 4 18 L 4 12 L 20 12 L 20 18 Z M 20 8 L 4 8 L 4 6 L 20 6 L 20 8 Z"
+                android:fillColor="#ffd54f"/>
+        </vector>
+    </aapt:attr>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="1500"
+                    android:valueFrom="M 12 2 C 8.13 2 5 5.13 5 9 C 5 10.75 5.778 12.778 6.815 14.704 C 7.852 16.63 9.148 18.454 10.185 19.796 C 11.222 21.139 12 22 12 22 C 12 22 13.75 20.063 15.5 17.469 C 17.25 14.875 19 11.625 19 9 C 19 7.065 18.218 5.315 16.951 4.049 C 15.685 2.783 13.935 2 12 2 L 12 2 M 12 11.5 C 10.62 11.5 9.5 10.38 9.5 9 C 9.5 7.62 10.62 6.5 12 6.5 C 13.38 6.5 14.5 7.62 14.5 9 C 14.5 10.38 13.38 11.5 12 11.5 Z M 12 7 L 12 7 L 12 7 L 12 7 L 12 7 L 12 7"
+                    android:valueTo="M 4 4 C 2.89 4 2.01 4.89 2.01 6 C 2.007 10 2.003 14 2 18 C 2 19.11 2.89 20 4 20 C 9.333 20 14.667 20 20 20 C 21.11 20 22 19.11 22 18 C 22 14 22 10 22 6 C 22 4.89 21.11 4 20 4 C 20 4 20 4 20 4 L 4 4 M 20 18 C 14.667 18 9.333 18 4 18 C 4 16 4 14 4 12 C 9.333 12 14.667 12 20 12 C 20 14 20 16 20 18 Z M 20 8 L 4 8 L 4 6 L 20 6 L 20 8 L 20 8"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="fillColor"
+                    android:startOffset="1600"
+                    android:duration="1200"
+                    android:valueFrom="#000"
+                    android:valueTo="#00000000"
+                    android:valueType="colorType"
+                    android:interpolator="@android:anim/accelerate_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="path_1">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="2600"
+                android:duration="400"
+                android:valueFrom="M 4 4 C 2.89 4 2.01 4.89 2.01 6 C 2.007 10 2.003 14 2 18 C 2 19.11 2.89 20 4 20 C 9.333 20 14.667 20 20 20 C 21.11 20 22 19.11 22 18 C 22 14 22 10 22 6 C 22 4.89 21.11 4 20 4 C 20 4 20 4 20 4 L 4 4 M 20 18 L 20 18 C 20 16 20 14 20 12 C 14.667 12 9.333 12 4 12 C 4 14 4 16 4 18 C 9.333 18 14.667 18 20 18 M 20 8 L 20 6 L 4 6 L 4 8 L 20 8 L 20 8"
+                android:valueTo="M 12 2 C 8.13 2 5 5.13 5 9 C 5 10.75 5.778 12.778 6.815 14.704 C 7.852 16.63 9.148 18.454 10.185 19.796 C 11.222 21.139 12 22 12 22 C 12 22 13.75 20.063 15.5 17.469 C 17.25 14.875 19 11.625 19 9 C 19 7.065 18.218 5.315 16.951 4.049 C 15.685 2.783 13.935 2 12 2 L 12 2 M 12 11.5 L 12 11.5 C 13.38 11.5 14.5 10.38 14.5 9 C 14.5 7.62 13.38 6.5 12 6.5 C 10.62 6.5 9.5 7.62 9.5 9 C 9.5 10.38 10.62 11.5 12 11.5 M 12 7 L 12 7 L 12 7 L 12 7 L 12 7 L 12 7"
+                android:valueType="pathType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
