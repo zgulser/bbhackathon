@@ -38,7 +38,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".ConfirmationActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash">
             <intent-filter>
@@ -47,22 +47,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:theme="@style/FullscreenTheme">
         </activity>
-
         <activity android:name=".CardsActivity" />
-
         <activity android:name=".CardRestrictionActivity" />
-
+        <activity android:name=".SplashActivity">
+        </activity>
     </application>
 
 </manifest>

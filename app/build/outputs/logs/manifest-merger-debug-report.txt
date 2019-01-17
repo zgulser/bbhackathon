@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
 MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:2:1-16:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/4c973d71e40aafbe1cf74f2371efe615/AndroidManifest.xml:17:1-22:12
@@ -14,6 +14,7 @@ MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Us
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/537781a6e145296a6ff2d797c9edb2a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zeki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/edfd5f4625ddf9c58627e99e533689fe/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f5e9a0cae63970bf97c6f51764072b47/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fcf912a53678fc0954b25d999229cdf/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/166fa67d5897a02f5ff6ce111082e79a/AndroidManifest.xml:17:1-22:12
@@ -43,20 +44,20 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zeki/.gradle/caches/t
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/973375a737a82d22131875aa01d58618/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/589d4a99687f027ae44810f5b691d701/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/568196d61199a7ddb4e654e54b232239/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
-INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
 	package
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
 		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-68:12
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:1-65:12
 		INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:2:11-69
@@ -87,7 +88,7 @@ ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/
 	android:name
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:18:22-69
 application
-ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:20:5-66:19
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:20:5-63:19
 MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/a04b55d32b10b8f4430a5f3245345ad7/AndroidManifest.xml:22:5-20
 MERGED from [com.github.dexafree:materiallist:3.2.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/materiallist-3.2.1.aar/22cdf547e4430691c118f160c98793e1/AndroidManifest.xml:11:5-14:19
@@ -104,6 +105,8 @@ MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gra
 MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/fce5843c2655809b06669f386f82e84c/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zeki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/edfd5f4625ddf9c58627e99e533689fe/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zeki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/edfd5f4625ddf9c58627e99e533689fe/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/699cd7c939129885256e0413d1cbc33e/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/05a1233ae09627fe4117ebbaf99c87a0/AndroidManifest.xml:22:5-23:19
@@ -128,14 +131,14 @@ ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:38:13-52
 	android:name
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:37:13-58
-activity#com.android.buzzaway.securecards.SplashActivity
+activity#com.android.buzzaway.securecards.ConfirmationActivity
 ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:40:9-49:20
 	android:label
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:43:13-58
 	android:configChanges
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:42:13-74
 	android:name
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:41:13-43
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:41:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:44:13-48:29
 action#android.intent.action.MAIN
@@ -147,27 +150,31 @@ ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/
 	android:name
 		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:47:27-74
 activity#com.android.buzzaway.securecards.MapsActivity
-ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:51:9-54:20
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:50:9-53:20
 	android:label
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:53:13-56
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:52:13-56
 	android:name
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:52:13-41
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:51:13-41
 activity#com.android.buzzaway.securecards.LoginActivity
-ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:56:9-60:20
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:54:9-58:20
 	android:label
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:58:13-57
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:56:13-57
 	android:theme
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:59:13-51
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:57:13-51
 	android:name
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:57:13-42
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:55:13-42
 activity#com.android.buzzaway.securecards.CardsActivity
-ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:62:9-51
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:59:9-51
 	android:name
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:62:19-48
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:59:19-48
 activity#com.android.buzzaway.securecards.CardRestrictionActivity
-ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:64:9-61
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:60:9-61
 	android:name
-		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:64:19-58
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:60:19-58
+activity#com.android.buzzaway.securecards.SplashActivity
+ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:61:9-62:20
+	android:name
+		ADDED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml:61:19-49
 uses-sdk
 INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/zeki/Desktop/code/backbase/hackathon/bbhackathon/app/src/main/AndroidManifest.xml
@@ -192,6 +199,8 @@ MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.
 MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/zeki/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/9535ab7b0128716d0852a0be5e430a70/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/537781a6e145296a6ff2d797c9edb2a7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/537781a6e145296a6ff2d797c9edb2a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zeki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/edfd5f4625ddf9c58627e99e533689fe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zeki/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/edfd5f4625ddf9c58627e99e533689fe/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f5e9a0cae63970bf97c6f51764072b47/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f5e9a0cae63970bf97c6f51764072b47/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zeki/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fcf912a53678fc0954b25d999229cdf/AndroidManifest.xml:20:5-44
