@@ -10,6 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import com.android.buzzaway.securecards.data.CardClient;
 import com.android.buzzaway.securecards.data.CardModel;
 
+import org.honorato.multistatetogglebutton.MultiStateToggleButton;
+import org.honorato.multistatetogglebutton.ToggleButton;
+
 import java.util.Objects;
 
 public class CardRestrictionActivity extends AppCompatActivity {
@@ -48,6 +51,18 @@ public class CardRestrictionActivity extends AppCompatActivity {
         Objects.requireNonNull(cardModel);
 
         // get locations and radius if present, then send to server when implemented
+
+        final CharSequence[] defaultTimeRanges = new CharSequence[]{"Today", "Tom", "Week", "Month", "More"};
+        MultiStateToggleButton button = this.findViewById(R.id.mstb_multi_id);
+        button.setElements(defaultTimeRanges);
+
+        button.setOnValueChangedListener(new ToggleButton.OnValueChangedListener() {
+            @Override
+            public void onValueChanged(int position) {
+
+            }
+        });
+
     }
 
 
