@@ -65,11 +65,15 @@
         </activity>
         <activity
             android:name="com.android.buzzaway.securecards.MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps" >
+        </activity>
         <activity
             android:name="com.android.buzzaway.securecards.LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity android:name="com.android.buzzaway.securecards.CardsActivity" />
+        <activity android:name="com.android.buzzaway.securecards.CardRestrictionActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

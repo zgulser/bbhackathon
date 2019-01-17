@@ -47,13 +47,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps">
+        </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme">
+        </activity>
+
+        <activity android:name=".CardsActivity" />
+
+        <activity android:name=".CardRestrictionActivity" />
+
     </application>
 
 </manifest>

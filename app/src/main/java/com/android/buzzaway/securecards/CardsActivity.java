@@ -1,6 +1,9 @@
 package com.android.buzzaway.securecards;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +18,10 @@ import com.dexafree.materialList.card.action.TextViewAction;
 import com.dexafree.materialList.view.MaterialListView;
 
 public class CardsActivity extends AppCompatActivity {
+
+    public static void start(@NonNull Context context) {
+        context.startActivity(new Intent(context, CardsActivity.class));
+    }
 
     private MaterialListView listView;
 
