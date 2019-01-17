@@ -1,6 +1,7 @@
 package com.android.buzzaway.securecards;
 
 import android.Manifest;
+import android.animation.Animator;
 import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -10,34 +11,41 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
+
+import org.w3c.dom.Text;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private SeekBar mSeekbar;
+    private TextView mProgress;
     private static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1000;
     private static final float DEFAULT_ZOOM = 12;
     private static final float DEFAULT_RADIUS_IN_METERS = 2000;
     private FusedLocationProviderClient mFusedLocationClient;
+    private Location myLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
         hideSystemUI();
+
+        initSeekbar();
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -64,7 +72,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
+    private void initSeekbar(){
+        mSeekbar = findViewById(R.id.seekBar);
+        mProgress = findViewById(R.id.progress);
+        mProgress.setVisibility(View.INVISIBLE);
+        mSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
 
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress,
+                                          boolean fromUser) {
+                mProgress.setVisibility(View.VISIBLE);
+                mProgress.setAlpha(1.0f);
+                mProgress.setText(String.valueOf(progress));
+                mProgress.animate().alpha(0f).setDuration(500).setListener(new Animator.AnimatorListener() {
+
+                    long started = System.currentTimeMillis();
+
+                    @Override
+                    public void onAnimationStart(Animator animator) {
+                        started = System.currentTimeMillis();
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
+                        if (System.currentTimeMillis() - started >= 500L){
+                            float radius = Float.parseFloat(mProgress.getText().toString());
+                            drawCircle(radius*100);
+                        }
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animator) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animator) {
+
+                    }
+                }).start();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) { }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) { }
+        });
+    }
 
     /**
      * Manipulates the map once available.
@@ -125,27 +180,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     public void onSuccess(Location location) {
                         // Got last known location. In some rare situations this can be null.
                         if (location != null) {
+                            myLocation = location;
                             // animate there
-                            LatLng whereAmI = new LatLng(location.getLatitude(), location.getLongitude());
+                            LatLng whereAmI = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
                             mMap.addMarker(new MarkerOptions().position(whereAmI));
                             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(whereAmI, DEFAULT_ZOOM));
 
                             // draw circle
-                            drawCircle(location, DEFAULT_RADIUS_IN_METERS);
+                            drawCircle(DEFAULT_RADIUS_IN_METERS);
                         }
                     }
                 });
     }
 
-    private void drawCircle(final Location location, final float radius){
-        CircleOptions circleOptions = new CircleOptions()
-                .center(new LatLng(location.getLatitude(), location.getLongitude()))
-                .radius(radius) // In meters
-                .strokeColor(Color.parseColor("#757575"))
-                .strokeWidth(4.0f)
-                .fillColor(Color.parseColor("#66ffd54f"));
+    private void drawCircle(final float radius){
+        if (myLocation != null) {
+            mMap.clear();
+            CircleOptions circleOptions = new CircleOptions()
+                    .center(new LatLng(myLocation.getLatitude(), myLocation.getLongitude()))
+                    .radius(radius) // In meters
+                    .strokeColor(Color.parseColor("#757575"))
+                    .strokeWidth(4.0f)
+                    .fillColor(Color.parseColor("#66ffd54f"));
 
-        // Get back the mutable Circle
-        mMap.addCircle(circleOptions);
+            // Get back the mutable Circle
+            mMap.addCircle(circleOptions);
+        }
     }
 }
