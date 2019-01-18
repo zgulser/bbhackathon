@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:text="Amount" />
+        android:text="Amount €" />
 
     <EditText
         android:id="@+id/maxAmount"
@@ -85,7 +85,7 @@
         android:layout_gravity="end"
         android:background="@color/colorAccent"
         android:textColor="@color/colorPrimary"
-        android:text="Complete"
+        android:text="Confirm"
         android:layout_marginBottom="16dp"/>
 
 </LinearLayout>

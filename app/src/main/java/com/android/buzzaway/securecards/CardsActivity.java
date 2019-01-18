@@ -18,7 +18,7 @@ import com.dexafree.materialList.view.MaterialListView;
 public class CardsActivity extends AppCompatActivity {
 
     public static void start(@NonNull Context context) {
-        context.startActivity(new Intent(context, CardsActivity.class));
+        context.startActivity(new Intent(context, ConfirmationActivity.class));
     }
 
     private MaterialListView listView;
