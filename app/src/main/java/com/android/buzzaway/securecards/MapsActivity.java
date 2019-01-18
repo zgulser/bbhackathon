@@ -257,8 +257,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mMap.snapshot(new GoogleMap.SnapshotReadyCallback() {
                 @Override
                 public void onSnapshotReady(Bitmap bitmap) {
+                    //ByteArrayOutputStream bStream = new ByteArrayOutputStream();
+                    //bitmap.compress(Bitmap.CompressFormat.PNG, 50, bStream);
+
+                    //byte[] byteArray = bStream.toByteArray();
                     ByteArrayOutputStream bStream = new ByteArrayOutputStream();
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, bStream);
+                    Bitmap b = Bitmap.createScaledBitmap(bitmap, 300, 460, true);
+                    b.compress(Bitmap.CompressFormat.PNG, 100, bStream);
                     byte[] byteArray = bStream.toByteArray();
                     CardRestrictionActivity.start(MapsActivity.this, myLocation, radius, byteArray, cardModel);
                 }

@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
         animatedLogo.postDelayed(new Runnable() {
             @Override
             public void run() {
-                AnimatedVectorDrawable animatedVectorDrawable = (AnimatedVectorDrawable) getResources().getDrawable(R.drawable.splashlogo3);
+                AnimatedVectorDrawable animatedVectorDrawable = (AnimatedVectorDrawable) getResources().getDrawable(R.drawable.splashlogo4);
                 animatedLogo.setImageDrawable(animatedVectorDrawable);
                 animatedVectorDrawable.start();
                 animatedLogo.postDelayed(new Runnable() {
