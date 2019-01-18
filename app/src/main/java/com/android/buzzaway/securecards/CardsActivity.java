@@ -10,7 +10,6 @@ import android.view.View;
 import com.android.buzzaway.securecards.data.CardClient;
 import com.android.buzzaway.securecards.data.CardModel;
 import com.dexafree.materialList.card.Card;
-import com.dexafree.materialList.card.CardProvider;
 import com.dexafree.materialList.card.OnActionClickListener;
 import com.dexafree.materialList.card.action.TextViewAction;
 import com.dexafree.materialList.view.MaterialListView;
@@ -35,10 +34,11 @@ public class CardsActivity extends AppCompatActivity {
 
     private Card bindCard(final CardModel cardModel) {
         return new Card.Builder(this)
-                .withProvider(new CardProvider())
+                .withProvider(new RestrictableCardProvider())
                 .setLayout(R.layout.bank_card_item)
                 .setTitle(cardModel.title)
                 .setDescription(cardModel.description)
+                .setRestricted(cardModel.isRestricted())
                 .setDrawable(cardModel.drawable)
                 .addAction(R.id.left_text_button, new TextViewAction(this)
                         .setText("AMOUNT")
@@ -51,7 +51,7 @@ public class CardsActivity extends AppCompatActivity {
                         }))
                 .addAction(R.id.right_text_button, new TextViewAction(this)
                         .setText("AREA")
-                        .setTextResourceColor(R.color.accent_material_dark)
+                        .setTextResourceColor(R.color.colorAccent)
                         .setListener(new OnActionClickListener() {
                             @Override
                             public void onActionClicked(View view, Card card) {

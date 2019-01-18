@@ -54,6 +54,7 @@
                     android:id="@+id/left_text_button"
                     style="@style/Material_Action"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:textSize="20sp"
                     tools:text="Action 1" />
 
@@ -61,8 +62,17 @@
                     android:id="@+id/right_text_button"
                     style="@style/Material_Action"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:textSize="20sp"
                     tools:text="Action 2" />
+
+                <TextView
+                    android:id="@+id/restrictionSign"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableEnd="@drawable/ic_lock_outline_black_24dp"
+                    android:padding="8dp" />
             </LinearLayout>
 
         </LinearLayout>

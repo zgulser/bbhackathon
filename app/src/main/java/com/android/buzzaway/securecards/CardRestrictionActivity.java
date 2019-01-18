@@ -32,6 +32,7 @@ public class CardRestrictionActivity extends AppCompatActivity {
     public static final String ARG_LOCATION_IMG = "hack.location.img";
     public static final String ARG_RADIUS = "hack.location.radius";
     private TextView dateRangeView;
+    private CardModel cardModel;
 
     public static void start(@NonNull Context context, @NonNull CardModel cardModel) {
         Bundle args = new Bundle();
@@ -61,7 +62,7 @@ public class CardRestrictionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_card_restriction);
 
         long id = getIntent().getLongExtra(ARG_CARD_ID, -1);
-        CardModel cardModel = CardClient.instance.findCardById(id);
+        cardModel = CardClient.instance.findCardById(id);
         Objects.requireNonNull(cardModel);
 
         SquareImageView mapScreenshot = findViewById(R.id.mapScreenshot);
@@ -130,10 +131,10 @@ public class CardRestrictionActivity extends AppCompatActivity {
                     @Override
                     public void onSucess(FingerprintManagerCompat.CryptoObject cryptoObject) {
                         Toast.makeText(CardRestrictionActivity.this, "Activated your restriction", Toast.LENGTH_LONG).show();
+                        cardModel.setRestricted(true);
                         CardsActivity.start(CardRestrictionActivity.this);
                     }
                 }).startScan();
-        ;
     }
 
 

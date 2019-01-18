@@ -15,12 +15,14 @@ public class CardModel {
     String description;
     public final @DrawableRes
     int drawable;
+    private boolean isRestricted;
 
-    public CardModel(long id, @NonNull String title, @NonNull String description, int drawable) {
+    CardModel(long id, @NonNull String title, @NonNull String description, int drawable) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.drawable = drawable;
+        this.isRestricted = false;
     }
 
     @Override
@@ -30,6 +32,15 @@ public class CardModel {
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", drawable=" + drawable +
+                ", isRestricted=" + isRestricted +
                 '}';
+    }
+
+    public boolean isRestricted() {
+        return isRestricted;
+    }
+
+    public void setRestricted(boolean restricted) {
+        isRestricted = restricted;
     }
 }
