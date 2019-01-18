@@ -20,38 +20,52 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        hideSystemUI();
-
         animatedLogo = findViewById(R.id.logo);
-        AnimatedVectorDrawable animatedVectorDrawable = (AnimatedVectorDrawable) getResources().getDrawable(R.drawable.splashlogo3);
-        animatedLogo.setImageDrawable(animatedVectorDrawable);
-        animatedVectorDrawable.start();
+        hideSystemUI();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         animatedLogo.postDelayed(new Runnable() {
             @Override
             public void run() {
-               animatedLogo.animate().scaleX(1/100.0f).scaleY(1/100.0f).setDuration(1000).setListener(new Animator.AnimatorListener() {
-                   @Override
-                   public void onAnimationStart(Animator animator) {
-                   }
+                AnimatedVectorDrawable animatedVectorDrawable = (AnimatedVectorDrawable) getResources().getDrawable(R.drawable.splashlogo3);
+                animatedLogo.setImageDrawable(animatedVectorDrawable);
+                animatedVectorDrawable.start();
+                animatedLogo.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        animatedLogo.animate().scaleX(1/100.0f).scaleY(1/100.0f).setDuration(1000).setListener(new Animator.AnimatorListener() {
+                            @Override
+                            public void onAnimationStart(Animator animator) {
+                            }
 
-                   @Override
-                   public void onAnimationEnd(Animator animator) {
-                       Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-                       startActivity(intent);
-                   }
+                            @Override
+                            public void onAnimationEnd(Animator animator) {
+                                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                                startActivity(intent);
+                            }
 
-                   @Override
-                   public void onAnimationCancel(Animator animator) {
+                            @Override
+                            public void onAnimationCancel(Animator animator) {
 
-                   }
+                            }
 
-                   @Override
-                   public void onAnimationRepeat(Animator animator) {
+                            @Override
+                            public void onAnimationRepeat(Animator animator) {
 
-                   }
-               }).start();
+                            }
+                        }).start();
+                    }
+                }, 3200);
             }
-        }, 3200);
+        }, 1000);
     }
 
     private void hideSystemUI() {
