@@ -13,16 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="Enable"
-        android:layout_marginBottom="16dp"/>
+        android:text="Enable" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#11000000">
+    </View>
 
     <Switch
         android:id="@+id/requireConfirmation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:layout_marginBottom="16dp"
         android:text="Require transaction confirmation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#11000000">
+    </View>
 
     <TextView
         android:id="@+id/textView"
@@ -35,9 +49,10 @@
         android:id="@+id/maxAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:hint="Max Amount that can be spent"
+        android:layout_marginBottom="16dp"
         android:inputType="number" />
+
 
     <com.theophrast.ui.widget.SquareImageView
         android:id="@+id/mapScreenshot"
@@ -51,9 +66,16 @@
         android:id="@+id/pickDateRange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:textColor="@android:color/black"
         android:text="Restriction period: None selected" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#11000000">
+    </View>
 
     <Button
         android:id="@+id/finish"
@@ -62,6 +84,7 @@
         android:textStyle="bold"
         android:layout_gravity="end"
         android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:text="Complete"
         android:layout_marginBottom="16dp"/>
 
