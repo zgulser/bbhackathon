@@ -1,6 +1,7 @@
 package com.android.buzzaway.securecards;
 
 import android.animation.Animator;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.VectorDrawable;
@@ -23,6 +24,13 @@ public class ConfirmationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_confirmation);
 
         status = findViewById(R.id.status);
+        status.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ConfirmationActivity.this.startActivity(new Intent(ConfirmationActivity.this, CardsActivity.class));
+            }
+        });
+
         animatedLogo = findViewById(R.id.logo);
         VectorDrawable progress = (VectorDrawable) getResources().getDrawable(R.drawable.time);
         animatedLogo.setImageDrawable(progress);
