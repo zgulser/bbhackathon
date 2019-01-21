@@ -121,7 +121,7 @@ public class CardRestrictionActivity extends AppCompatActivity {
                 .setSubTittle("foo@example.com")
                 .setDescription("In order to use the Fingerprint sensor we need your authorization first")
                 .setColorPrimary(R.color.colorPrimary)
-                .setIcon(ContextCompat.getDrawable(this, R.mipmap.ic_launcher_round))
+                .setIcon(ContextCompat.getDrawable(this, R.drawable.ic_credit_card_black_24dp))
                 .setListern(new EasyFingerPrint.ResultFingerPrintListern() {
                     @Override
                     public void onError(@NonNull String message, int i) {
@@ -132,7 +132,7 @@ public class CardRestrictionActivity extends AppCompatActivity {
                     public void onSucess(FingerprintManagerCompat.CryptoObject cryptoObject) {
                         Toast.makeText(CardRestrictionActivity.this, "Activated your restriction", Toast.LENGTH_LONG).show();
                         cardModel.setRestricted(true);
-                        CardsActivity.start(CardRestrictionActivity.this);
+                        CardsActivity.startWithConfirmation(CardRestrictionActivity.this);
                     }
                 }).startScan();
     }

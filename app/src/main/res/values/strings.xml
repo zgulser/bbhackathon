@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SecureCards</string>
+    <string name="app_name2">Secure Cards</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_login">Sign in</string>
 
@@ -16,7 +16,7 @@
         completions."
     </string>
 
-    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_splash">Secure Cards</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
