@@ -27,15 +27,19 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener, GoogleMap.OnMarkerClickListener {
 
     public static final String ARG_CARD_ID = "hack.card.id";
     private float radius;
@@ -49,6 +53,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final float DEFAULT_RADIUS_IN_METERS = 2000;
     private FusedLocationProviderClient mFusedLocationClient;
     private Location myLocation;
+    private Marker currentMarker;
+    private Map<Marker, Float> markersRadiuses = new HashMap<>();
+    private Map<Marker, Circle> markerCircles = new HashMap<>();
 
     public static void start(@NonNull Context context, @NonNull CardModel cardModel) {
         Bundle args = new Bundle();
@@ -56,7 +63,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Intent startGeofencing = new Intent(context, MapsActivity.class);
         startGeofencing.putExtras(args);
         context.startActivity(startGeofencing);
-        ;
     }
 
     @Override
@@ -76,6 +82,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         populateCardModel();
 
         findViewById(R.id.next).setOnClickListener(this);
+        findViewById(R.id.removeMarker).setOnClickListener(this);
     }
 
     @Override
@@ -180,10 +187,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
             @Override
             public void onMapLongClick(LatLng latLng) {
-                mMap.addMarker(new MarkerOptions()
+                currentMarker = mMap.addMarker(new MarkerOptions()
                         .position(latLng)
-                        .title("You are here")
+                        .title("Allowed here")
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+                drawCircle(DEFAULT_RADIUS_IN_METERS);
             }
         });
         checkPermission();
@@ -235,7 +243,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             myLocation = location;
                             // animate there
                             LatLng whereAmI = new LatLng(myLocation.getLatitude(), myLocation.getLongitude());
-                            mMap.addMarker(new MarkerOptions().position(whereAmI));
+                            currentMarker = mMap.addMarker(new MarkerOptions().position(whereAmI));
                             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(whereAmI, DEFAULT_ZOOM));
 
                             // draw circle
@@ -246,17 +254,29 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void drawCircle(final float radius) {
-        if (myLocation != null) {
-            mMap.clear();
+        if (currentMarker != null) {
             CircleOptions circleOptions = new CircleOptions()
-                    .center(new LatLng(myLocation.getLatitude(), myLocation.getLongitude()))
+                    .center(new LatLng(currentMarker.getPosition().latitude, currentMarker.getPosition().longitude))
                     .radius(radius) // In meters
                     .strokeColor(Color.parseColor("#757575"))
                     .strokeWidth(4.0f)
                     .fillColor(Color.parseColor("#66ffd54f"));
 
             // Get back the mutable Circle
-            mMap.addCircle(circleOptions);
+            Circle oldCircle = markerCircles.get(currentMarker);
+            if (oldCircle != null) {
+                oldCircle.remove();
+            }
+            Circle newCircle = mMap.addCircle(circleOptions);
+            markerCircles.put(currentMarker, newCircle);
+            markersRadiuses.put(currentMarker, radius);
+        }
+    }
+
+    private void drawCircle() {
+        Float currentMarkerRadius = markersRadiuses.get(currentMarker);
+        if (currentMarkerRadius != null) {
+            drawCircle(currentMarkerRadius);
         }
     }
 
@@ -278,6 +298,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     CardRestrictionActivity.start(MapsActivity.this, myLocation, radius, byteArray, cardModel);
                 }
             });
+        } else if (v.getId() == R.id.removeMarker) {
+            currentMarker.remove();
+            markersRadiuses.remove(currentMarker);
+            Circle circle = markerCircles.get(currentMarker);
+            if (circle != null) {
+                circle.remove();
+                markerCircles.remove(currentMarker);
+            }
         }
     }
 
@@ -287,5 +315,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Bitmap b = Bitmap.createScaledBitmap(v.getDrawingCache(), 200, 430, true);
         v.setDrawingCacheEnabled(false);
         return b;
+    }
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        currentMarker = marker;
+        drawCircle();
+        return true;
     }
 }
